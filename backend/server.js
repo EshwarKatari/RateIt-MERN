@@ -8,8 +8,8 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://vercel.com/eswarkatari/rateit-mern'],
-  credentials: true
+  origin: '*',
+  credentials: false
 }));
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
