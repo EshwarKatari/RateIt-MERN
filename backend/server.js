@@ -8,7 +8,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:3000', 'https://rateit-frontend.vercel.app'],
+  origin: ['http://localhost:3000', 'https://vercel.com/eswarkatari/rateit-mern'],
   credentials: true
 }));
 app.use(express.json());
